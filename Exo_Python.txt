@@ -1,0 +1,123 @@
+--------------ex1
+#Définissez une fonction max() qui prend deux nombres comme arguments et renvoie le plus grand d'entre eux. Utilisez la construction if-then-else disponible en Python. (Il est vrai que Python a la fonction max() intégrée, mais l'écrire soi-même est néanmoins un bon exercice).
+
+def max(nombre1,nombre2):
+  if nombre1 > nombre2:
+   print(nombre1)
+  else:
+   print(nombre2)
+
+max(1,5)
+
+------------------ex2
+
+#Définissez une fonction max_of_three() qui prend trois nombres comme arguments et renvoie le plus grand d'entre eux.
+
+def max_of_three(nombre1,nombre2,nombre3):
+  Tableau = [nombre1,nombre2,nombre3]
+  x = max(Tableau)
+  print(x)
+
+max_of_three(1,60,20)
+
+---------------3
+
+#Définissez une fonction qui calcule la longueur d'une liste ou d'une chaîne de caractères donnés. (Python a intégré la fonction len(), mais l'écrire soi-même est néanmoins un bon exercice ).
+
+def la_longueur(chaine):
+  x = chaine
+  longueur = len(x)
+  print(longueur)
+
+la_longueur('Bonjour')
+
+-----------------------4
+
+#Écrivez une fonction qui prend un caractère (c'est-à-dire une chaîne de longueur 1) et qui retourne True si c'est une voyelle, False sinon.
+
+
+
+def detecteur(a):
+ if a in ('aeiouy'):
+    print('renvoie true')
+    return True
+ else:
+    print('renvoie false')
+    return False
+   
+
+detecteur('z')
+
+-----------------------------5
+
+#Écrivez une fonction translate() qui traduira un texte en "rövarspråket" (suédois pour "langue du voleur"), c'est-à-dire, doublez chaque consonne et placez une occurrence de "o" entre les deux. Par exemple, translate("this is fun") devrait retourner la chaîne "tothohisos isos fofunon".
+
+def translate(text1):
+   if text1 in ('aeiouy'):
+     return True
+   else:
+     
+--------------------------------6
+
+#Définissez une fonction sum() et une fonction multiply() qui additionnent et multiplient (respectivement) tous les nombres dans une liste de nombres. Par exemple, sum([1, 2, 3, 4]) devrait retourner 10, et multiply([1, 2, 3, 4]) devrait retourner 24.
+
+
+def sum():  
+  tableau = [1,2,3,4]
+  x = 0
+  for i in tableau:
+    x = x + i
+
+  print(x)
+
+
+def multiply():
+  tableau = [1,2,3,4]
+  x = 1
+  for i in tableau:
+    x = x*i
+
+  print(x)
+
+
+
+multiply()
+
+----------------------------------------7
+
+#Définissez une fonction reverse() qui calcule l'inversion d'une chaîne de caractères. Par exemple, reverse( "I am testing" ) devrait retourner la chaîne "gnitset ma I".
+
+
+
+def reverse(lachaine):
+  text1 = lachaine
+  text2 = ""
+  for lettre in text1:
+    text2 = lettre + text2
+  
+  print(text2)
+
+
+
+reverse('bonjour')
+
+------------------------------8
+
+#Définissez une fonction is_palindrome() qui reconnaît les palindromes (c'est-à-dire les mots qui se ressemblent écrits à l'envers). Par exemple, is_palindrome("radar") doit retourner True
+
+
+def isPalindrome(s):
+    return s == s[::-1]
+ 
+ 
+# Driver code
+s = "lamif"
+x = isPalindrome(s)
+ 
+if x:
+    print("n'est pas un palindrome")
+else:
+    print("est un palindrome")
+
+------------------------------------9
+
